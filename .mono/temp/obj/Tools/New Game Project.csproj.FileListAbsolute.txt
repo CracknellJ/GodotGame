@@ -1,0 +1,5 @@
+C:\Users\jackc\Desktop\Godot Platformer\.mono\temp\bin\Tools\New Game Project.dll
+C:\Users\jackc\Desktop\Godot Platformer\.mono\temp\bin\Tools\New Game Project.pdb
+C:\Users\jackc\Desktop\Godot Platformer\.mono\temp\obj\Tools\New Game Project.csprojAssemblyReference.cache
+C:\Users\jackc\Desktop\Godot Platformer\.mono\temp\obj\Tools\New Game Project.dll
+C:\Users\jackc\Desktop\Godot Platformer\.mono\temp\obj\Tools\New Game Project.pdb
