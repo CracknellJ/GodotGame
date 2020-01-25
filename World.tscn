@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://Sprites/AsepriteWorks/Tilesets/NightForestTileset.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/AsepriteWorks/Tilesets/BushV1.png" type="Texture" id=2]
@@ -15,37 +15,38 @@
 [ext_resource path="res://Sprites/AsepriteWorks/PlayerSprite/DianaRunning6.png" type="Texture" id=13]
 [ext_resource path="res://Sprites/AsepriteWorks/PlayerSprite/DianaRunning7.png" type="Texture" id=14]
 [ext_resource path="res://Sprites/AsepriteWorks/PlayerSprite/DianaRunning8.png" type="Texture" id=15]
-[ext_resource path="res://Sprites/AsepriteWorks/Backgrounds/FarBackground.png" type="Texture" id=16]
-[ext_resource path="res://Sprites/AsepriteWorks/Backgrounds/CloserTreesTest.png" type="Texture" id=17]
+[ext_resource path="res://HealthDisplay.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Sprites/AsepriteWorks/Backgrounds/FarBackground.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/AsepriteWorks/Backgrounds/CloserTreesTest.png" type="Texture" id=18]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 0, 16, 16, 16, 16, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 0, 16, 16, 16, 16, 16, 0, 16 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 points = PoolVector2Array( 0, 16, 16, 16, 16, 16, 0, 16 )
 
 [sub_resource type="ConvexPolygonShape2D" id=4]
-points = PoolVector2Array( 0, 16, 16, 16, 16, 16, 0, 16 )
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
-points = PoolVector2Array( 0, 16, 16, 16, 16, 16, 0, 16 )
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
 [sub_resource type="ConvexPolygonShape2D" id=6]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
-points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+points = PoolVector2Array( 0, 6, 8, 0, 16, 0, 16, 16, 0, 16 )
 
 [sub_resource type="ConvexPolygonShape2D" id=8]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
 [sub_resource type="ConvexPolygonShape2D" id=9]
-points = PoolVector2Array( 0, 6, 8, 0, 16, 0, 16, 16, 0, 16 )
-
-[sub_resource type="ConvexPolygonShape2D" id=10]
-points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
-
-[sub_resource type="ConvexPolygonShape2D" id=11]
 points = PoolVector2Array( 0, 0, 10, 0, 16, 6, 16, 16, 0, 16 )
 
-[sub_resource type="TileSet" id=12]
+[sub_resource type="TileSet" id=10]
 0/name = "NightForestTileset.png 0"
 0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
@@ -58,7 +59,7 @@ points = PoolVector2Array( 0, 0, 10, 0, 16, 6, 16, 16, 0, 16 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 3 ),
+"shape": SubResource( 1 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 0/z_index = 0
@@ -74,7 +75,7 @@ points = PoolVector2Array( 0, 0, 10, 0, 16, 6, 16, 16, 0, 16 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 4 ),
+"shape": SubResource( 2 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 1/z_index = 0
@@ -90,7 +91,7 @@ points = PoolVector2Array( 0, 0, 10, 0, 16, 6, 16, 16, 0, 16 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 5 ),
+"shape": SubResource( 3 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 2/z_index = 0
@@ -106,7 +107,7 @@ points = PoolVector2Array( 0, 0, 10, 0, 16, 6, 16, 16, 0, 16 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 6 ),
+"shape": SubResource( 4 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 3/z_index = 0
@@ -122,7 +123,7 @@ points = PoolVector2Array( 0, 0, 10, 0, 16, 6, 16, 16, 0, 16 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 7 ),
+"shape": SubResource( 5 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 4/z_index = 0
@@ -138,7 +139,7 @@ points = PoolVector2Array( 0, 0, 10, 0, 16, 6, 16, 16, 0, 16 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 8 ),
+"shape": SubResource( 6 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 5/z_index = 0
@@ -164,7 +165,7 @@ points = PoolVector2Array( 0, 0, 10, 0, 16, 6, 16, 16, 0, 16 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 9 ),
+"shape": SubResource( 7 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 7/z_index = 0
@@ -180,7 +181,7 @@ points = PoolVector2Array( 0, 0, 10, 0, 16, 6, 16, 16, 0, 16 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 10 ),
+"shape": SubResource( 8 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 8/z_index = 0
@@ -196,7 +197,7 @@ points = PoolVector2Array( 0, 0, 10, 0, 16, 6, 16, 16, 0, 16 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 11 ),
+"shape": SubResource( 9 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 9/z_index = 0
@@ -221,12 +222,17 @@ points = PoolVector2Array( 0, 0, 10, 0, 16, 6, 16, 16, 0, 16 )
 11/shapes = [  ]
 11/z_index = 0
 
-[sub_resource type="SpriteFrames" id=1]
+[sub_resource type="SpriteFrames" id=11]
 animations = [ {
 "frames": [  ],
 "loop": true,
 "name": "Jump",
 "speed": 10.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "Fall",
+"speed": 5.0
 }, {
 "frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": true,
@@ -237,20 +243,15 @@ animations = [ {
 "loop": true,
 "name": "Run",
 "speed": 12.0
-}, {
-"frames": [  ],
-"loop": true,
-"name": "Fall",
-"speed": 5.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=2]
+[sub_resource type="CapsuleShape2D" id=12]
 height = 13.0
 
 [node name="World" type="Node"]
 
 [node name="TilemapFront" type="TileMap" parent="."]
-tile_set = SubResource( 12 )
+tile_set = SubResource( 10 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 1048559, 11, 0, 1048567, 11, 0, 1048580, 0, 0, 1048581, 1, 0, 1048582, 1, 0, 1048583, 1, 0, 1048584, 1, 0, 1048585, 1, 0, 1048586, 1, 0, 1048587, 1, 0, 1048588, 1, 0, 1048589, 1, 0, 1048590, 1, 0, 1048591, 1, 0, 1048592, 1, 0, 1048593, 1, 0, 1048594, 1, 0, 1048595, 1, 0, 1048596, 1, 0, 1048597, 1, 0, 1048598, 1, 0, 1048599, 1, 0, 1048600, 1, 0, 1048601, 1, 0, 1048602, 1, 0, 1048603, 1, 0, 1048604, 1, 0, 1048605, 1, 0, 1048606, 1, 0, 1048607, 1, 0, 1048608, 1, 0, 1048609, 1, 0, 1048610, 1, 0, 1048611, 1, 0, 1048612, 1, 0, 1048613, 1, 0, 1048614, 1, 0, 1048615, 1, 0, 1048616, 1, 0, 1048617, 1, 0, 1048618, 1, 0, 1048619, 1, 0, 1048620, 1, 0, 1048621, 1, 0, 1048622, 1, 0, 1048623, 1, 0, 1048624, 1, 0, 1048625, 1, 0, 1048626, 1, 0, 1048627, 1, 0, 1048628, 1, 0, 1048629, 1, 0, 1048630, 1, 0, 1048631, 1, 0, 1048632, 1, 0, 1048633, 1, 0, 1179627, 7, 0, 1179628, 8, 0, 1179629, 8, 0, 1179630, 8, 0, 1179631, 8, 0, 1179632, 8, 0, 1179633, 8, 0, 1179634, 8, 0, 1179635, 8, 0, 1179636, 8, 0, 1179637, 8, 0, 1179638, 8, 0, 1179639, 8, 0, 1179640, 8, 0, 1179641, 8, 0, 1179642, 8, 0, 1179643, 8, 0, 1179644, 8, 0, 1179645, 8, 0, 1179646, 8, 0, 1179647, 8, 0, 1114112, 8, 0, 1114113, 8, 0, 1114114, 9, 0, 1114116, 3, 0, 1114117, 4, 0, 1114118, 4, 0, 1114119, 4, 0, 1114120, 4, 0, 1114121, 4, 0, 1114122, 4, 0, 1114123, 4, 0, 1114124, 4, 0, 1114125, 4, 0, 1114126, 4, 0, 1114127, 4, 0, 1114128, 4, 0, 1114129, 4, 0, 1114130, 4, 0, 1114131, 4, 0, 1114132, 4, 0, 1114133, 4, 0, 1114134, 4, 0, 1114135, 4, 0, 1114136, 4, 0, 1114137, 4, 0, 1114138, 4, 0, 1114139, 4, 0, 1114140, 4, 0, 1114141, 4, 0, 1114142, 4, 0, 1114143, 4, 0, 1114144, 4, 0, 1114145, 4, 0, 1114146, 4, 0, 1114147, 4, 0, 1114148, 4, 0, 1114149, 4, 0, 1114150, 4, 0, 1114151, 4, 0, 1114152, 4, 0, 1114153, 4, 0, 1114154, 4, 0, 1114155, 4, 0, 1114156, 4, 0, 1114157, 4, 0, 1114158, 4, 0, 1114159, 4, 0, 1114160, 4, 0, 1114161, 4, 0, 1114162, 4, 0, 1114163, 4, 0, 1114164, 4, 0, 1114165, 4, 0, 1114166, 4, 0, 1114167, 4, 0, 1114168, 4, 0, 1114169, 5, 0, 1245163, 6, 0, 1245164, 6, 0, 1245165, 6, 0, 1245166, 6, 0, 1245167, 6, 0, 1245168, 6, 0, 1245169, 6, 0, 1245170, 6, 0, 1245171, 6, 0, 1245172, 6, 0, 1245173, 6, 0, 1245174, 6, 0, 1245175, 6, 0, 1245176, 6, 0, 1245177, 6, 0, 1245178, 6, 0, 1245179, 6, 0, 1245180, 6, 0, 1245181, 6, 0, 1245182, 6, 0, 1245183, 6, 0, 1179648, 6, 0, 1179649, 6, 0, 1179650, 6, 0, 1179652, 6, 0, 1179653, 6, 0, 1179654, 6, 0, 1179655, 6, 0, 1179656, 6, 0, 1179657, 6, 0, 1179658, 6, 0, 1179659, 6, 0, 1179660, 6, 0, 1179661, 6, 0, 1179662, 6, 0, 1179663, 6, 0, 1179664, 6, 0, 1179665, 6, 0, 1179666, 6, 0, 1179667, 6, 0, 1179668, 6, 0, 1179669, 6, 0, 1179670, 6, 0, 1179671, 6, 0, 1179672, 6, 0, 1179673, 6, 0, 1179674, 6, 0, 1179675, 6, 0, 1179676, 6, 0, 1179677, 6, 0, 1179678, 6, 0, 1179679, 6, 0, 1179680, 6, 0, 1179681, 6, 0, 1179682, 6, 0, 1179683, 6, 0, 1179684, 6, 0, 1179685, 6, 0, 1179686, 6, 0, 1179687, 6, 0, 1179688, 6, 0, 1179689, 6, 0, 1179690, 6, 0, 1179691, 6, 0, 1179692, 6, 0, 1179693, 6, 0, 1179694, 6, 0, 1179695, 6, 0, 1179696, 6, 0, 1179697, 6, 0, 1179698, 6, 0, 1179699, 6, 0, 1179700, 6, 0, 1179701, 6, 0, 1179702, 6, 0, 1179703, 6, 0, 1179704, 6, 0, 1179705, 6, 0, 1310699, 10, 0, 1310700, 10, 0, 1310701, 10, 0, 1310702, 10, 0, 1310703, 10, 0, 1310704, 10, 0, 1310705, 10, 0, 1310706, 10, 0, 1310707, 10, 0, 1310708, 10, 0, 1310709, 10, 0, 1310710, 10, 0, 1310711, 10, 0, 1310712, 10, 0, 1310713, 10, 0, 1310714, 10, 0, 1310715, 10, 0, 1310716, 10, 0, 1310717, 10, 0, 1310718, 10, 0, 1310719, 10, 0, 1245184, 10, 0, 1245185, 10, 0, 1245186, 10, 0 )
@@ -266,19 +267,23 @@ __meta__ = {
 }
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
-frames = SubResource( 1 )
+frames = SubResource( 11 )
 animation = "Idle"
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-shape = SubResource( 2 )
+shape = SubResource( 12 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
 zoom = Vector2( 0.7, 0.7 )
 
+[node name="HealthDisplay" parent="Player" instance=ExtResource( 16 )]
+position = Vector2( -10, -22 )
+
 [node name="TilemapBehind" type="TileMap" parent="."]
-tile_set = SubResource( 12 )
+tile_set = SubResource( 10 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 1048563, 11, 0, 1048580, 0, 0, 1048581, 1, 0, 1048582, 1, 0, 1048583, 1, 0, 1048584, 1, 0, 1048585, 1, 0, 1048586, 1, 0, 1048587, 1, 0, 1048588, 1, 0, 1048589, 1, 0, 1048590, 1, 0, 1048591, 1, 0, 1048592, 1, 0, 1048593, 1, 0, 1048594, 1, 0, 1048595, 1, 0, 1048596, 1, 0, 1048597, 1, 0, 1048598, 1, 0, 1048599, 1, 0, 1048600, 1, 0, 1048601, 1, 0, 1048602, 1, 0, 1048603, 1, 0, 1048604, 1, 0, 1048605, 1, 0, 1048606, 1, 0, 1048607, 1, 0, 1048608, 1, 0, 1048609, 1, 0, 1048610, 1, 0, 1048611, 1, 0, 1048612, 1, 0, 1048613, 1, 0, 1048614, 1, 0, 1048615, 1, 0, 1048616, 1, 0, 1048617, 1, 0, 1048618, 1, 0, 1048619, 1, 0, 1048620, 1, 0, 1048621, 1, 0, 1048622, 1, 0, 1048623, 1, 0, 1048624, 1, 0, 1048625, 1, 0, 1048626, 1, 0, 1048627, 1, 0, 1048628, 1, 0, 1048629, 1, 0, 1048630, 1, 0, 1048631, 1, 0, 1048632, 1, 0, 1048633, 1, 0, 1179627, 7, 0, 1179628, 8, 0, 1179629, 8, 0, 1179630, 8, 0, 1179631, 8, 0, 1179632, 8, 0, 1179633, 8, 0, 1179634, 8, 0, 1179635, 8, 0, 1179636, 8, 0, 1179637, 8, 0, 1179638, 8, 0, 1179639, 8, 0, 1179640, 8, 0, 1179641, 8, 0, 1179642, 8, 0, 1179643, 8, 0, 1179644, 8, 0, 1179645, 8, 0, 1179646, 8, 0, 1179647, 8, 0, 1114112, 8, 0, 1114113, 8, 0, 1114114, 9, 0, 1114116, 3, 0, 1114117, 4, 0, 1114118, 4, 0, 1114119, 4, 0, 1114120, 4, 0, 1114121, 4, 0, 1114122, 4, 0, 1114123, 4, 0, 1114124, 4, 0, 1114125, 4, 0, 1114126, 4, 0, 1114127, 4, 0, 1114128, 4, 0, 1114129, 4, 0, 1114130, 4, 0, 1114131, 4, 0, 1114132, 4, 0, 1114133, 4, 0, 1114134, 4, 0, 1114135, 4, 0, 1114136, 4, 0, 1114137, 4, 0, 1114138, 4, 0, 1114139, 4, 0, 1114140, 4, 0, 1114141, 4, 0, 1114142, 4, 0, 1114143, 4, 0, 1114144, 4, 0, 1114145, 4, 0, 1114146, 4, 0, 1114147, 4, 0, 1114148, 4, 0, 1114149, 4, 0, 1114150, 4, 0, 1114151, 4, 0, 1114152, 4, 0, 1114153, 4, 0, 1114154, 4, 0, 1114155, 4, 0, 1114156, 4, 0, 1114157, 4, 0, 1114158, 4, 0, 1114159, 4, 0, 1114160, 4, 0, 1114161, 4, 0, 1114162, 4, 0, 1114163, 4, 0, 1114164, 4, 0, 1114165, 4, 0, 1114166, 4, 0, 1114167, 4, 0, 1114168, 4, 0, 1114169, 5, 0, 1245163, 6, 0, 1245164, 6, 0, 1245165, 6, 0, 1245166, 6, 0, 1245167, 6, 0, 1245168, 6, 0, 1245169, 6, 0, 1245170, 6, 0, 1245171, 6, 0, 1245172, 6, 0, 1245173, 6, 0, 1245174, 6, 0, 1245175, 6, 0, 1245176, 6, 0, 1245177, 6, 0, 1245178, 6, 0, 1245179, 6, 0, 1245180, 6, 0, 1245181, 6, 0, 1245182, 6, 0, 1245183, 6, 0, 1179648, 6, 0, 1179649, 6, 0, 1179650, 6, 0, 1179652, 6, 0, 1179653, 6, 0, 1179654, 6, 0, 1179655, 6, 0, 1179656, 6, 0, 1179657, 6, 0, 1179658, 6, 0, 1179659, 6, 0, 1179660, 6, 0, 1179661, 6, 0, 1179662, 6, 0, 1179663, 6, 0, 1179664, 6, 0, 1179665, 6, 0, 1179666, 6, 0, 1179667, 6, 0, 1179668, 6, 0, 1179669, 6, 0, 1179670, 6, 0, 1179671, 6, 0, 1179672, 6, 0, 1179673, 6, 0, 1179674, 6, 0, 1179675, 6, 0, 1179676, 6, 0, 1179677, 6, 0, 1179678, 6, 0, 1179679, 6, 0, 1179680, 6, 0, 1179681, 6, 0, 1179682, 6, 0, 1179683, 6, 0, 1179684, 6, 0, 1179685, 6, 0, 1179686, 6, 0, 1179687, 6, 0, 1179688, 6, 0, 1179689, 6, 0, 1179690, 6, 0, 1179691, 6, 0, 1179692, 6, 0, 1179693, 6, 0, 1179694, 6, 0, 1179695, 6, 0, 1179696, 6, 0, 1179697, 6, 0, 1179698, 6, 0, 1179699, 6, 0, 1179700, 6, 0, 1179701, 6, 0, 1179702, 6, 0, 1179703, 6, 0, 1179704, 6, 0, 1179705, 6, 0, 1310699, 10, 0, 1310700, 10, 0, 1310701, 10, 0, 1310702, 10, 0, 1310703, 10, 0, 1310704, 10, 0, 1310705, 10, 0, 1310706, 10, 0, 1310707, 10, 0, 1310708, 10, 0, 1310709, 10, 0, 1310710, 10, 0, 1310711, 10, 0, 1310712, 10, 0, 1310713, 10, 0, 1310714, 10, 0, 1310715, 10, 0, 1310716, 10, 0, 1310717, 10, 0, 1310718, 10, 0, 1310719, 10, 0, 1245184, 10, 0, 1245185, 10, 0, 1245186, 10, 0 )
@@ -293,7 +298,7 @@ motion_scale = Vector2( 0.2, 0.2 )
 motion_mirroring = Vector2( 640, 360 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
-texture = ExtResource( 16 )
+texture = ExtResource( 17 )
 centered = false
 offset = Vector2( 0, -180 )
 
@@ -302,6 +307,6 @@ motion_scale = Vector2( 0.6, 0.6 )
 motion_mirroring = Vector2( 640, 360 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
-texture = ExtResource( 17 )
+texture = ExtResource( 18 )
 centered = false
 offset = Vector2( 0, -80 )
