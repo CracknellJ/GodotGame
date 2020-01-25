@@ -19,6 +19,8 @@ func _physics_process(delta):
 		motion.x = max(motion.x - ACCELERATION, -MAX_SPEED)
 		$AnimatedSprite.flip_h = true
 		$AnimatedSprite.play("Run")
+	elif Input.is_action_pressed("ui_down"):
+		$AnimatedSprite.play("DrawBack")
 	else:
 		$AnimatedSprite.play("Idle")
 		friction = true

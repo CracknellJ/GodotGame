@@ -8,3 +8,8 @@ C:\Users\joshb\Documents\GitHub\GodotGame\.mono\temp\bin\Tools\New Game Project.
 C:\Users\joshb\Documents\GitHub\GodotGame\.mono\temp\obj\Tools\New Game Project.csprojAssemblyReference.cache
 C:\Users\joshb\Documents\GitHub\GodotGame\.mono\temp\obj\Tools\New Game Project.dll
 C:\Users\joshb\Documents\GitHub\GodotGame\.mono\temp\obj\Tools\New Game Project.pdb
+C:\Users\jackc\Desktop\DianaTheHunter\.mono\temp\bin\Tools\New Game Project.dll
+C:\Users\jackc\Desktop\DianaTheHunter\.mono\temp\bin\Tools\New Game Project.pdb
+C:\Users\jackc\Desktop\DianaTheHunter\.mono\temp\obj\Tools\New Game Project.csprojAssemblyReference.cache
+C:\Users\jackc\Desktop\DianaTheHunter\.mono\temp\obj\Tools\New Game Project.dll
+C:\Users\jackc\Desktop\DianaTheHunter\.mono\temp\obj\Tools\New Game Project.pdb
